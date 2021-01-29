@@ -36,7 +36,7 @@
         }
 
         // Set a default account
-        web3.eth.defaultAccount = web3.eth.accounts[0];
+        web3.eth.defaultAccount = '';
 
         //ABI copied from Etherscan (Contract) -> https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7
         const abi = [
@@ -71,22 +71,29 @@
         ];
 
         // Get the contract address
-        var remixContract = new web3.eth.Contract(abi, '0x4690b857D4A4B519A2BdEFD5807681dC53C4a23E');
+        var RemixContract = new web3.eth.Contract(
+            abi,
+            '0xa1dDe3b256E81B61c30402066dA151C75156648F', //contract address
+            {
+                from: '0x4690b857D4A4B519A2BdEFD5807681dC53C4a23E', //default from address
+                gasPrice: '20000000000' //default gas price in wei (20 gwei)
+            });
 
         // Get the contract abi
         // var myMessage = RemixContract.at('0x4690b857D4A4B519A2BdEFD5807681dC53C4a23E');
 
-        console.log(remixContract);
+        console.log(RemixContract);
 
         $("#setMessageButton").click(function() {
             message = $("#userInput").val()
-            remixContract.methods.setMessage(message)
-                .send({from: '0x4690b857D4A4B519A2BdEFD5807681dC53C4a23E'})
+            window.ethereum.enable(); //It opens Metamask to complete the transaction
+            RemixContract.methods.setMessage(message)
+                .send()
                 .then(receipt => {
                     console.log('The transaction completed')
                 });
             // myMessage.setMessage(message, (error, result) => { message = result });
-            console.log($("#userInput").val())
+            console.log(message)
         });
 
     </script>
