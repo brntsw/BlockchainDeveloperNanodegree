@@ -71,5 +71,6 @@ On Ganache, go to Accounts and click in the key (Show keys) of one of the listed
 
 ![Screenshot](docs/ganache_show_keys.png)
 
-Copy the private key from the window that pops up and then paste it on the field "Paste your private key string here"
+Copy the private key from the window that pops up
+On Metamask, paste it on the field "Paste your private key string here"
 It should show the same value in Ether of the account on Ganache
