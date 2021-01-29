@@ -65,7 +65,7 @@ After filling the fields, hit Save
 
 Then, go to My Accounts and click in Import account:
 
-![Screenshot](docs/metamask_import_acccount.png)
+![Screenshot](docs/metamask_import_account.png)
 
 On Ganache, go to Accounts and click in the key (Show keys) of one of the listed accounts:
 
