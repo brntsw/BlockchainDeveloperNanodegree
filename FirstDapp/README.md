@@ -1,9 +1,12 @@
 # First DApp project
 
-This project contains the following tools:
-  - Remix
-  - Ganache
-  - Metamask
+First DApp is a project that builds a simple Ehtereum DApp (Descentralized App) in which the goal is creating a contract and sending the transaction, using all the blockchain theory as basis.
+
+This project uses the following tools in order to reach its goal:
+  - [Remix](https://remix.ethereum.org/)
+  - [Ganache](https://www.trufflesuite.com/ganache)
+  - [Metamask](https://metamask.io/)
+  - [Infura](https://infura.io/)
 
 ## **Remix**
 Remix is an online integrated development environment for creating smart contracts
@@ -76,3 +79,42 @@ Copy the private key from the window that pops up
 On Metamask, paste it on the field "Paste your private key string here"
 
 It should show the same value in Ether of the account on Ganache
+
+**IMPORTANT**: In order to open Metamask when doing a transaction it requires the following before calling the ```setMessage(...):```:
+    ```javascript
+    window.ethereum.enable();
+    ```
+**Reference**: https://ethereum.stackexchange.com/questions/19524/invalid-address-error-when-interacting-with-a-smart-contract-with-metamask/65659#65659
+
+
+## **6. Connecting to the Test Net**
+In order to connect to the Test Net, it's required to use **Infura**.
+
+On **Infura**, change the Endpoint to Rinkeby and copy the url, like below:
+
+![Screenshot](docs/infura_rinkeby.png)
+
+Then, replace the url copied with the one that is pointing to Ganache for the moment.
+
+After that, open **Metamask** and select the Network **Rinkeby Test Network** and make sure it's connected.
+
+Open **Remix** and change the Environment to *__Injected Web3__*
+Then, click on **Deploy**
+
+After doing the above, it's going to be shown the following on **Metamask**:
+
+![Screenshot](docs/metamask_transaction_confirmation.png)
+
+Going back to **Remix** it's going to be shown a notification of **Metamask**:
+
+![Screenshot](docs/metamask_alert_confirmation.png)
+
+After a few seconds, it's going to be confirmed the transaction on **Remix**, like the following:
+
+![Screenshot](docs/remix_transaction_confirmation.png)
+
+Copy the Contract address generated on **Remix**, like shown in the following:
+
+![Screenshot](docs/remix_copy_contract_address.png)
+
+Then replace the current address in the code.
