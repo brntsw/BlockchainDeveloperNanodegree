@@ -32,7 +32,7 @@
         if (typeof web3 !== 'undefined') {
             web3 = new Web3(web3.currentProvider);
         } else {
-            web3 = new Web3(new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545"));
+            web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v3/1847c00aaf734021b2cebb553efe605a")); // Ganache: HTTP://127.0.0.1:7545
         }
 
         // Set a default account
@@ -73,9 +73,9 @@
         // Get the contract address
         var RemixContract = new web3.eth.Contract(
             abi,
-            '0xa1dDe3b256E81B61c30402066dA151C75156648F', //contract address
+            '0x94fe4A68B235d2c6cCF07c16ac82860F9efd24e3', //contract address
             {
-                from: '0x4690b857D4A4B519A2BdEFD5807681dC53C4a23E', //default from address
+                from: '0xCCd8b02CCb65266F1742650131552B836DEE2617', //default from address
                 gasPrice: '20000000000' //default gas price in wei (20 gwei)
             });
 
@@ -90,7 +90,9 @@
             RemixContract.methods.setMessage(message)
                 .send()
                 .then(receipt => {
-                    console.log('The transaction completed')
+                    console.log(receipt)
+                }, error => {
+                    console.log(`An error occurred: ${error}`)
                 });
             // myMessage.setMessage(message, (error, result) => { message = result });
             console.log(message)
