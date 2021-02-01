@@ -4,19 +4,19 @@ App = {
 
   init: async function() {
     // Load pets.
-    $.getJSON('../pets.json', function(data) {
-      var petsRow = $('#petsRow');
-      var petTemplate = $('#petTemplate');
+    $.getJSON('../cars.json', function(data) {
+      var carsRow = $('#carsRow');
+      var carTemplate = $('#petTemplate');
 
       for (i = 0; i < data.length; i ++) {
-        petTemplate.find('.panel-title').text(data[i].name);
-        petTemplate.find('img').attr('src', data[i].picture);
-        petTemplate.find('.pet-breed').text(data[i].breed);
-        petTemplate.find('.pet-age').text(data[i].age);
-        petTemplate.find('.pet-location').text(data[i].location);
-        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+        carTemplate.find('.panel-title').text(data[i].name);
+        carTemplate.find('img').attr('src', data[i].picture);
+        carTemplate.find('.car-year').text(data[i].year);
+        carTemplate.find('.car-price').text(data[i].price);
+        carTemplate.find('.car-location').text(data[i].location);
+        carTemplate.find('.btn-buy').attr('data-id', data[i].id);
 
-        petsRow.append(petTemplate.html());
+        carsRow.append(carTemplate.html());
       }
     });
 
@@ -67,7 +67,7 @@ App = {
   },
 
   bindEvents: function() {
-    $(document).on('click', '.btn-adopt', App.handleAdopt);
+    $(document).on('click', '.btn-buy', App.handleAdopt);
   },
 
   markAdopted: function() {
@@ -80,7 +80,7 @@ App = {
     }).then(function(adopters) {
       for (i = 0; i < adopters.length; i++) {
         if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
-          $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
+          $('.panel-car').eq(i).find('button').text('Success').attr('disabled', true);
         }
       }
     }).catch(function(err) {

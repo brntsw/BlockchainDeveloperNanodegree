@@ -1,0 +1,130 @@
+[
+  {
+    "id": 0,
+    "name": "Nissan Skyline GT-R",
+    "picture": "images/nissan-skyline.jpg",
+    "year": "2002",
+    "price": "US$ 12.000",
+    "location": "Lisco, Alabama"
+  },
+  {
+    "id": 1,
+    "name": "Toyota Supra",
+    "picture": "images/supra.jpg",
+    "year": "2003",
+    "price": "US$ 8.000",
+    "location": "Tooleville, West Virginia"
+  },
+  {
+    "id": 2,
+    "name": "Toyota Prius",
+    "picture": "images/prius.jpg",
+    "year": "2005",
+    "price": "US$ 5.000",
+    "location": "Freeburn, Idaho"
+  },
+  {
+    "id": 3,
+    "name": "Mazda 6",
+    "picture": "images/mazda6.jpeg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Camas, Pennsylvania"
+  },
+  {
+    "id": 4,
+    "name": "Chevrolet Malibu",
+    "picture": "images/malibu.png",
+    "year": "2017",
+    "price": "US$ 13.500",
+    "location": "Gerber, South Dakota"
+  },
+  {
+    "id": 5,
+    "name": "Dodge Journey",
+    "picture": "images/journey.jpg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Innsbrook, Illinois"
+  },
+  {
+    "id": 6,
+    "name": "Jeep Compass",
+    "picture": "images/jeep-compass.jpg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Soudan, Louisiana"
+  },
+  {
+    "id": 7,
+    "name": "Honda Civic",
+    "picture": "images/civic.jpeg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Jacksonwald, Palau"
+  },
+  {
+    "id": 8,
+    "name": "Nissan Sentra",
+    "picture": "images/sentra.jpeg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Honolulu, Hawaii"
+  },
+  {
+    "id": 9,
+    "name": "Hyundai Elantra",
+    "picture": "images/elantra.jpeg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Matheny, Utah"
+  },
+  {
+    "id": 10,
+    "name": "Chrysler 300",
+    "picture": "images/chrysler-300.jpg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Tyhee, Indiana"
+  },
+  {
+    "id": 11,
+    "name": "Toyota Yaris",
+    "picture": "images/yaris.jpeg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Windsor, Montana"
+  },
+  {
+    "id": 12,
+    "name": "Toyota Corolla",
+    "picture": "images/corolla.jpg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Kingstowne, Nevada"
+  },
+  {
+    "id": 13,
+    "name": "Nissan Rogue",
+    "picture": "images/nissan-rogue.jpeg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Sultana, Massachusetts"
+  },
+  {
+    "id": 14,
+    "name": "Kia Opitma",
+    "picture": "images/kia-opitma.jpeg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Broadlands, Oregon"
+  },
+  {
+    "id": 15,
+    "name": "GMC Terrain",
+    "picture": "images/gmc-terrain.jpeg",
+    "year": "2009",
+    "price": "US$ 11.500",
+    "location": "Dawn, Wisconsin"
+  }
+]
