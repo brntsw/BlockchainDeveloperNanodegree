@@ -1,0 +1,9 @@
+1) mkdir solidity
+
+2) cd solidity
+
+3) truffle init
+
+4) npm install truffle-hdwallet-provider
+
+5) npm install openzeppelin-solidity
