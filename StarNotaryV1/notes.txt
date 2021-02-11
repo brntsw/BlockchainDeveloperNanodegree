@@ -1,0 +1,12 @@
+Setting up your project (1)
+
+1) Verify you have Truffle installed (In your terminal usetruffle -v) if not you need to install it (in your terminal use npm install -g truffle).
+2) Create your project folder (In your terminal use mkdir starNotaryv1)
+3) Move to the project folder (cd starNotaryv1)
+4) Create your project using (In your terminal truffle unbox webpack)
+5) Type truffle develop
+6) Type compile
+7) Type test (when the tests are done)
+8) After implementing the index.js and index.html, type:
+    - compile
+    - migrate --reset (it will make sure there is a clean copy and avoid errors)
