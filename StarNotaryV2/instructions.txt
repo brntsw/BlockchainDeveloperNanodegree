@@ -16,3 +16,9 @@
     - In the compilers -> solc -> version, set the value as "0.6.2" (because the version being ran on files is >=0.6.0 <0.8.0;)
 8) After changing the code of the project:
     - Type truffle compile
+9) When writing tests, and if typing truffle compile this error happens "ExtendableError: Could not find suitable configuration file."
+    - Type truffle init
+    - Then, type truffle compile
+    - Type truffle test
+10) Edit the index.html in order to have a front end ready
+11) Implement the index.js in order to create the star from the values entered by the user
