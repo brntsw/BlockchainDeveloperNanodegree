@@ -1,0 +1,18 @@
+1) Check out Open zeppelin Github page
+2) Go to contracts -> token -> ERC721
+3) Go to terminal
+4) Type truffle unbox webpack
+5) Go back to Github and click on ERC721.sol
+    - Check out all the functions
+6) Back to the project in the editor, delete the boilerplate code:
+    - contracts -> ConvertLib.sol
+    - contracts -> MetaCoin.sol
+    - test -> metacoin.js
+    - test -> TestMetacoin.sol
+7) Now, go to node_modules -> contracts -> token -> ERC721 -> ERC721.sol
+    - Check the ownerOf function
+    - Check the _mint function
+8) Specify the solc version on truffle-config.js
+    - In the compilers -> solc -> version, set the value as "0.6.2" (because the version being ran on files is >=0.6.0 <0.8.0;)
+8) After changing the code of the project:
+    - Type truffle compile
