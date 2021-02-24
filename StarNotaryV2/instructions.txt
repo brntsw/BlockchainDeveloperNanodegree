@@ -22,3 +22,12 @@
     - Type truffle test
 10) Edit the index.html in order to have a front end ready
 11) Implement the index.js in order to create the star from the values entered by the user
+12) In order to run the backend, do the following:
+    - Type truffle develop (a session will be started at http://127.0.0.1:9545/)
+    - Type compile
+    - Type test
+    - Type migrate --reset
+        - Check out that there was a cost on that in ETH
+13) In order to run the front end, do the following:
+    - cd app
+    - npm run dev
