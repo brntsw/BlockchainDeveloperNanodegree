@@ -1,0 +1,40 @@
+1) Make sure to have the latest version of the following installed:
+    - truffle
+    - Metamask
+2) Type from terminal: truffle develop
+    - After doing that, there is going to be shown the accounts and private keys
+3) Go to Metamask and click on Import account
+    - Copy the first Private key from terminal and paste on Metamask
+    - Copy the second Private key from terminal and paste on Metamask
+    - After doing that, it should have added those two accounts to Metamask with the Ether
+4) Run the command compile on the terminal
+5) Then type the command migrate --reset
+6) From terminal, type cd app
+7) Run npm run dev
+    - It's going to run the front end on localhost:8080
+8) Open the file StarNotary and check it out. The steps to be developed are:
+    1. Implement Task 1 lookUptokenIdToStarInfo
+        - You should return the Star saved in tokenIdToStarInfo mapping
+    2. Implement Task 1 Exchange Stars function
+        - Passing to star tokenId you will need to check if the owner of _tokenId1 or _tokenId2 is the sender
+        - You don't have to check for the price of the token (star)
+        - Get the owner of the two tokens (ownerOf(_tokenId1), ownerOf(_tokenId1)
+        - Use _transferFrom function to exchange the tokens.
+    3. Implement Task 1 Transfer Stars
+        - Check if the sender is the ownerOf(_tokenId)
+        - Use the transferFrom(from, to, tokenId); function to transfer the Star
+    4. Implement Task 2 Add supporting unit tests
+        - Create a Star with different tokenId
+        - Call the name and symbol properties in your Smart Contract and compare with the name and symbol provided
+    5. lets 2 users exchange stars
+        - create 2 Stars with different tokenId
+        - Call the exchangeStars functions implemented in the Smart Contract
+        - Verify that the owners changed
+    6. lets a user transfer a star
+        - create a Star with different tokenId
+        - use the transferStar function implemented in the Smart Contract
+        - Verify the star owner changed.
+    7. lookUptokenIdToStarInfo test
+        - Create a Star with different tokenId
+        - Call your method lookUptokenIdToStarInfo
+        - Verify if you Star name is the same
