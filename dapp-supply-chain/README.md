@@ -5,7 +5,6 @@ This is a project from the Udacity course Blockchain Developer Nanodegree which 
 ## UML Diagrams
 
 ### Activity diagram
-<br>
 ![Activity](./uml/activity_diagram.png)
 <br>
 <br>
