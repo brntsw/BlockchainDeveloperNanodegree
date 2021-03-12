@@ -4,16 +4,15 @@ This is a project from the Udacity course Blockchain Developer Nanodegree which 
 
 ### UML Diagrams
 
-[Activity Diagram](./uml/activity_diagram.png)
 ![Activity](./uml/activity_diagram.png)
 <br>
-[Sequence Diagram](./uml/sequence_diagram.png)
+
 ![Sequence](./uml/sequence_diagram.png)
 <br>
-[State Diagram](./uml/state_diagram.png)
+
 ![State](./uml/state_diagram.png)
 <br>
-[Class diagram](./uml/class_diagram.png)
+
 ![Class-Diagram](./uml/class_diagram.png)
 <br>
 
