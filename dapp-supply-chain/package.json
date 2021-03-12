@@ -1,0 +1,24 @@
+{
+  "name": "fair-trade-coffee-supply-chain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "truffle develop",
+    "dev": "lite-server",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --reset",
+    "test": "truffle test",
+    "deploy": "truffle migrate --reset --network rinkeby",
+    "host": "ipfs add -r website"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "2.4.0"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.3.4"
+  }
+}

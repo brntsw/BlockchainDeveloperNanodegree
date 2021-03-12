@@ -1,0 +1,11 @@
+Steps to reproduce the attack
+
+- Pay attention to the fallback function
+- The fallback function will be called anytime you make a call to the contract with a function name that doesn't exist 
+    within the contract
+    - When calling that non existing function, it will default to calling this fallback function
+    - What someone can do in this case is call the Wallet contract with the name of the function that only exists in the library
+    - Since that call doesn't exist in the Wallet, it would default to the fallback function which delegates this call
+      to the library
+    - If the name of the function is addOwner, you can supply it with your address. You just made yourself the owner of
+      this wallet. From there you can drain the funds from the wallet or transfer to another wallet that you own
