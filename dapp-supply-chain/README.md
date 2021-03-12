@@ -11,7 +11,7 @@ This is a project from the Udacity course Blockchain Developer Nanodegree which 
 <br>
 
 ### Sequence diagram
-![Sequence](./uml/sequence_diagram.jpeg)
+![Sequence](./uml/sequence_diagram.png)
 <br>
 <br>
 <br>
