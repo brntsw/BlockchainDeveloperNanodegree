@@ -79,7 +79,6 @@ App = {
     },
 
     getMetaskAccountID: function () {
-        const Web3 = require('web3');
         var web3 = new Web3(App.web3Provider);
 
         web3.eth.getAccounts(function (err, res) {
