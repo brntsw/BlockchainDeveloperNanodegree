@@ -226,3 +226,10 @@ Summary
 > Total deployments:   6
 > Final cost:          0.08686766 ETH
 ```
+
+### Versions
+
+* Truffle v5.1.63 (core: 5.1.63)
+* Solidity v0.5.16 (solc-js)
+* Node v14.8.0
+* Web3.js v1.2.9
